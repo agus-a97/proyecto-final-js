@@ -48,11 +48,11 @@ function mostrarDolar () {
         // console.log(d);
     
         
-        $("#box").append(`
-                    <div class="card col-sm-2 m-3">
+        $("#dolar").append(`
+                    <div class="card col-sm-2 m-3 ">
                         <h3>${d.nombre}</h3>
-                        <p>Compra: ${d.compra}</p>
-                        <p>Venta: ${d.venta}</p>
+                        <p class="precioUSCompra"><strong>Compra: ${d.compra}</strong></p>
+                        <p class="precioUSVenta"><strong>Venta: ${d.venta}</strong></p>
     
                     </div>
                 `)

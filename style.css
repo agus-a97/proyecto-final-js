@@ -19,6 +19,9 @@
 #info{
     display: none;
 }
-.precioUS{
+.precioUSVenta{
     color: green;
+}
+.precioUSCompra{
+    color: rgb(199, 14, 14);
 }
