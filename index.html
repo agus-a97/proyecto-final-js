@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto Final</title>
+</head>
+<body>
+
+    
+
+    <section class="m-2" id="sect1">
+        <h2>Ingreso de Productos</h2>
+
+        <div>
+            
+            <button id="btninfo" class="btn btn-primary">INFO</button>
+    
+            <p id="info">Aqui puedes agregar distintos productos que desees, los mismos se mostraran en formato tarjeta.<br>Ingresa el nombre, precio y el id (no admite productos con id's repetidos)</p>
+        </div>
+
+        <button id="dark-mode" class="my-2 py-2 btn btn-secondary">Modo Oscuro</button>
+
+        
+        <div id="box">
+
+            <button id="boton-dolar" class="btn btn-success">DOLAR</button>
+            <p id="dolar">Se le aplicara una devaluacion al dolar Blue (compra) a los precios automaticamente</p>
+
+        </div>
+
+        <div class="my-2 py-2">
+            <form id="formP">
+                <input type="text" name="productos" id="nombre" placeholder="Ingresa el Producto">
+
+                <input type="number" name="precio" id="precio" placeholder="Ingresa el Precio">
+
+                <input type="number" name="id" id="id" placeholder="Ingresa el id">
+
+                
+                <button id="boton" class="btn btn-success">Agregar</button>
+            </form>
+        </div>
+        <div id="vaciarLista" class="btn btn-danger">Vaciar Lista</div>
+        
+        
+    </section>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+    <script src="./api.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
